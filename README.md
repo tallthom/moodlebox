@@ -240,3 +240,10 @@ If macOS blocks the app:
 1. Right-click the app → **Open**
 2. Or go to **System Settings → Privacy & Security** → **Open Anyway**
 3. After first launch, future launches will work normally
+
+---
+
+## 👥 Contributors
+
+- **Khairu Aqsara** ([@khairu-aqsara](https://github.com/khairu-aqsara)) - Lead Developer
+- **Thom Rawson** ([@tallthom](https://github.com/tallthom)) - Moodle Specialist & Core Contributor
