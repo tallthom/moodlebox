@@ -130,7 +130,11 @@ export class LifecycleManager {
 
     if (!alreadyDownloaded) {
       // Resolve latest stable tag from GitHub before downloading
-      onStatusUpdate('provisioning', undefined, `Resolving latest Moodle ${version.version} release...`)
+      onStatusUpdate(
+        'provisioning',
+        undefined,
+        `Resolving latest Moodle ${version.version} release...`
+      )
       onLog?.(`🔍 Resolving latest Moodle ${version.version} release from GitHub...`)
       const tag = await resolveLatestTag(version.version)
       const moodleDownloadUrl = `https://github.com/moodle/moodle/archive/refs/tags/${tag}.zip`

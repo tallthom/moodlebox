@@ -136,8 +136,12 @@ export class ComposeGenerator {
 \t<Directory ${documentRoot}>
 \t\tOptions Indexes FollowSymLinks
 \t\tAllowOverride None
-\t\tRequire all granted${withRouter ? `
-\t\tFallbackResource /r.php` : ''}
+\t\tRequire all granted${
+      withRouter
+        ? `
+\t\tFallbackResource /r.php`
+        : ''
+    }
 \t</Directory>
 
 \tRewriteEngine On

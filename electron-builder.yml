@@ -8,33 +8,33 @@ directories:
 
 # Files to include in all builds
 files:
-  - "!**/.vscode/*"
-  - "!src/*"
-  - "!electron.vite.config.{js,ts,mjs,cjs}"
-  - "!{.eslintcache,eslint.config.mjs,.prettierignore,.prettierrc.yaml,dev-app-update.yml,CHANGELOG.md,README.md}"
-  - "!{.env,.env.*,.npmrc,pnpm-lock.yaml}"
-  - "!{tsconfig.json,tsconfig.node.json,tsconfig.web.json}"
-  - "!planning/*"
-  - "!.github/*"
-  - "!BUILD_GUIDE.md"
-  - "!PRD.md"
-  - "!CLAUDE.md"
-  - "!generate-icon.py"
-  - "!build/icons/*"
-  - "!build/icon-source.png"
+  - '!**/.vscode/*'
+  - '!src/*'
+  - '!electron.vite.config.{js,ts,mjs,cjs}'
+  - '!{.eslintcache,eslint.config.mjs,.prettierignore,.prettierrc.yaml,dev-app-update.yml,CHANGELOG.md,README.md}'
+  - '!{.env,.env.*,.npmrc,pnpm-lock.yaml}'
+  - '!{tsconfig.json,tsconfig.node.json,tsconfig.web.json}'
+  - '!planning/*'
+  - '!.github/*'
+  - '!BUILD_GUIDE.md'
+  - '!PRD.md'
+  - '!CLAUDE.md'
+  - '!generate-icon.py'
+  - '!build/icons/*'
+  - '!build/icon-source.png'
   # Exclude unnecessary node_modules files
-  - "!node_modules/**/{CHANGELOG.md,README.md,README,readme.md,readme}"
-  - "!node_modules/**/{test,__tests__,tests,powered-test,example,examples}"
-  - "!node_modules/**/*.d.ts"
-  - "!node_modules/**/*.md"
-  - "!node_modules/.bin"
-  - "!node_modules/.cache"
+  - '!node_modules/**/{CHANGELOG.md,README.md,README,readme.md,readme}'
+  - '!node_modules/**/{test,__tests__,tests,powered-test,example,examples}'
+  - '!node_modules/**/*.d.ts'
+  - '!node_modules/**/*.md'
+  - '!node_modules/.bin'
+  - '!node_modules/.cache'
   # Exclude all locales except English
-  - "!**/node_modules/**/locales/**"
-  - "**/node_modules/**/locales/en*.pak"
+  - '!**/node_modules/**/locales/**'
+  - '**/node_modules/**/locales/en*.pak'
   # Exclude source maps
-  - "!**/*.map"
-  - "!**/*.js.map"
+  - '!**/*.map'
+  - '!**/*.js.map'
   # Include necessary directories
   - out/**/*
   - assets/**

@@ -996,8 +996,7 @@ export class ProjectService {
     // Get version data — support both "5.2" (new) and "5.2.0" (legacy) stored formats
     const version = this.versionsData?.releases.find(
       (r) =>
-        r.version === project.moodleVersion ||
-        project.moodleVersion.startsWith(r.version + '.')
+        r.version === project.moodleVersion || project.moodleVersion.startsWith(r.version + '.')
     )
     if (!version) {
       throw new Error(`Version ${project.moodleVersion} not found`)

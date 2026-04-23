@@ -149,7 +149,9 @@ describe('ComposeGenerator', () => {
       expect(output).toContain('- ./mysql_data:/var/lib/mysql')
       expect(output).toContain('- ./config/php.ini:/usr/local/etc/php/conf.d/moodlebox.ini')
       expect(output).toContain('- ./config/mysql.cnf:/etc/mysql/conf.d/moodlebox.cnf')
-      expect(output).toContain('- ./config/apache.conf:/etc/apache2/sites-available/000-default.conf')
+      expect(output).toContain(
+        '- ./config/apache.conf:/etc/apache2/sites-available/000-default.conf'
+      )
     })
 
     it('should handle custom db port', () => {

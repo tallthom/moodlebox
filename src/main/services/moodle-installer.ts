@@ -101,7 +101,14 @@ export class MoodleInstaller {
 
     return this.dockerExec({
       container: 'moodle',
-      command: ['composer', 'install', '--no-interaction', '--prefer-dist', '--no-dev', '--classmap-authoritative'],
+      command: [
+        'composer',
+        'install',
+        '--no-interaction',
+        '--prefer-dist',
+        '--no-dev',
+        '--classmap-authoritative'
+      ],
       cwd: projectPath,
       onStdout: onLog,
       onStderr: onLog
